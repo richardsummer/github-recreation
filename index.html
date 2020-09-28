@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GitHub Recreation</title>
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body>
+
+    <section class="user"></section>
+    <section class="orgs"></section>
+    <section class="repos"></section>
+
+
+    <script id="repo-template" type="text/x-handlebars-template">
+      {{#each repos}}
+        <div>{{this.name}}</div>
+      {{/each}}
+    </script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
