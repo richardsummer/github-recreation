@@ -3,20 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>GitHub Recreation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
   </head>
-  <body>
+  <body class="container-fluid">
+    <div class="row">
+      <section class="col-lg-3 left-section">
+        <section class="user">
+          <img src="img_2100.jpeg" alt="Github profile pic">
+          <h3>Richard Summer</h3>
+          <h6>richardsummer</h6>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light" name="button">Edit Profile</button>
+          <hr>
+        </section>
+        <section class="orgs"></section>
+          <h6>Organizations</h6>
+      </section>
 
-    <section class="user"></section>
-    <section class="orgs"></section>
-    <section class="repos"></section>
+      <section class="col-lg-9 repos">
+        <script id="repo-template" type="text/x-handlebars-template">
+          {{#each repos}}
+            <div>{{this.name}}</div>
+            <hr>
+          {{/each}}
+        </script>
+      </section>
 
-
-    <script id="repo-template" type="text/x-handlebars-template">
-      {{#each repos}}
-        <div>{{this.name}}</div>
-      {{/each}}
-    </script>
+    </div>
 
 
 

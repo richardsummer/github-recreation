@@ -1,0 +1,20 @@
+.container {
+
+}
+
+.left-section {
+  /* background-color: red; */
+}
+
+.repos {
+  color: #2866CF;
+}
+
+img {
+  border-radius: 50%;
+  width: 280px;
+}
+
+.btn {
+  height: 32px;
+}
